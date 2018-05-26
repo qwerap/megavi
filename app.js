@@ -47,7 +47,7 @@ app.use(express.static(path.join(__dirname, 'public')));
     -------------------------------------------*/
     app.use(
       connection(mysql,{
-        host: 'megavino.mysql.database.azure.com',
+        host: 'localhost',
         user: 'roger@megavino', // mysql user
         password : 'Soporte.$2018', // mysql password
         port : 3306, //port mysql
