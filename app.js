@@ -45,7 +45,7 @@ app.use(express.static(path.join(__dirname, 'public')));
     app.use(
       connection(mysql,{
         host: 'localhost',
-        user: 'mysqldbuser@megavineyardapp-mysqldbserver', // mysql user
+        user: 'root', // mysql user
         password : 'Soporte.$2018', // mysql password
         database:'nodejs' // database name
     },'pool') //or single
