@@ -51,7 +51,7 @@ app.use(express.static(path.join(__dirname, 'public')));
         user: 'roger@megavino', // mysql user
         password : 'Soporte.$2018', // mysql password
         port : 3306, //port mysql
-        database:'vino' // database name
+        database:'nodejs' // database name
     },'pool') //or single
 
       );
