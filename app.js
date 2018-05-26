@@ -41,21 +41,19 @@ app.use(methodOverride(function(req, res){
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-/*------------------------------------------
-    connection peer, register as middleware
-    type koneksi : single,pool and request
-    -------------------------------------------*/
+
     app.use(
       connection(mysql,{
         host: 'localhost',
-        user: 'root', // mysql user
-        password : '', // mysql password
+        user: 'mysqldbuser@megavineyardapp-mysqldbserver', // mysql user
+        password : 'Soporte.$2018', // mysql password
         database:'nodejs' // database name
     },'pool') //or single
 
       );
 
-
+//Database=nodejs;Data Source=megavineyardapp-mysqldbserver.mysql.database.azure.com;
+//User Id=mysqldbuser@megavineyardapp-mysqldbserver;
 
     app.use('/', index);
     app.use('/customers', customers);
