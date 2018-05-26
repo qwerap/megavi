@@ -49,7 +49,7 @@ app.use(express.static(path.join(__dirname, 'public')));
       connection(mysql,{
         host: 'localhost',
         user: 'root', // mysql user
-        password : 'Soporte.$2018', // mysql password
+        password : '', // mysql password
         database:'nodejs' // database name
     },'pool') //or single
 
